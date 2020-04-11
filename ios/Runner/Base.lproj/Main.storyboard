@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Flutter View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FlutterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="41" y="31"/>
+        </scene>
+        <!--Samba Player View Controller-->
+        <scene sceneID="Dz0-SG-4EF">
+            <objects>
+                <viewController storyboardIdentifier="SambaPlayerViewController" id="X3w-9u-uwZ" customClass="SambaPlayerViewController" customModule="Runner" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k99-q6-V78"/>
+                        <viewControllerLayoutGuide type="bottom" id="VCE-je-vmP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6yL-Ki-RZ9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Ubv-z6-oIS">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R0K-2f-IBg">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="R0K-2f-IBg" secondAttribute="trailing" id="Oiy-KL-XHv"/>
+                            <constraint firstItem="R0K-2f-IBg" firstAttribute="top" secondItem="k99-q6-V78" secondAttribute="bottom" id="YZA-MA-cvE"/>
+                            <constraint firstItem="Ubv-z6-oIS" firstAttribute="centerX" secondItem="6yL-Ki-RZ9" secondAttribute="centerX" id="do2-zO-Pef"/>
+                            <constraint firstItem="R0K-2f-IBg" firstAttribute="leading" secondItem="6yL-Ki-RZ9" secondAttribute="leading" id="kev-gZ-I7U"/>
+                            <constraint firstItem="VCE-je-vmP" firstAttribute="top" secondItem="R0K-2f-IBg" secondAttribute="bottom" id="lTT-x1-4fz"/>
+                            <constraint firstItem="Ubv-z6-oIS" firstAttribute="centerY" secondItem="6yL-Ki-RZ9" secondAttribute="centerY" id="seb-q2-CE1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loadingIndicator" destination="Ubv-z6-oIS" id="nIG-pw-e9o"/>
+                        <outlet property="playerView" destination="R0K-2f-IBg" id="7Zr-Vj-1QT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jay-dY-e5J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="942.02898550724649" y="30.803571428571427"/>
+        </scene>
+    </scenes>
+</document>
